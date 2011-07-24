@@ -34,6 +34,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -41,24 +42,22 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    __block SecondViewController *weakSelf = self;
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillResignActiveNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+        if([[weakSelf view] window] != nil){
+            NSURL *url = [NSURL URLWithString:@"deeplinking://tab2"];
+            [[NSUserDefaults standardUserDefaults] setURL:url forKey:@"launch-url"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            NSLog(@"commited launch url from second view");
+        }
+    }];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

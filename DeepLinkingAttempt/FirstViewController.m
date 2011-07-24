@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "GOItemDetailViewController.h"
 
 @implementation FirstViewController
 
@@ -26,45 +27,53 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    __block FirstViewController *weakSelf = self;
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillResignActiveNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+        if([[weakSelf view] window] != nil){
+            NSURL *url = [NSURL URLWithString:@"deeplinking://tab1"];
+            [[NSUserDefaults standardUserDefaults] setURL:url forKey:@"launch-url"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            NSLog(@"commited launch url from first view");
+        }
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
+
+#pragma mark -
+#pragma mark UITableView Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 32;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *idenfitifer = @"poop";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idenfitifer];
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:idenfitifer];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"Item number %i", indexPath.row];
+    cell.detailTextLabel.text = @"Cool huh?";
+    return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *itemID = [NSString stringWithFormat:@"%i", indexPath.row];
+    GOItemDetailViewController *detail = [[GOItemDetailViewController alloc] initWithItemID:itemID];
+    [self.navigationController pushViewController:detail animated:YES];
+}
 @end

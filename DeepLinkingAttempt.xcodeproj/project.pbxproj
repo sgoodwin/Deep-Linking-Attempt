@@ -30,6 +30,7 @@
 		9B7DDF4A13DC8B3700C5886F /* NSDictionary+QueryHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF4813DC8B3700C5886F /* NSDictionary+QueryHandling.m */; };
 		9B7DDF5813DC8BF100C5886F /* GOItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF5613DC8BF100C5886F /* GOItemDetailViewController.m */; };
 		9B7DDF5913DC8BF100C5886F /* GOItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF5713DC8BF100C5886F /* GOItemDetailViewController.xib */; };
+		9B7DDF5B13DC9D7D00C5886F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF5A13DC9D7D00C5886F /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		9B7DDF5513DC8BF100C5886F /* GOItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOItemDetailViewController.h; sourceTree = "<group>"; };
 		9B7DDF5613DC8BF100C5886F /* GOItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOItemDetailViewController.m; sourceTree = "<group>"; };
 		9B7DDF5713DC8BF100C5886F /* GOItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GOItemDetailViewController.xib; sourceTree = "<group>"; };
+		9B7DDF5A13DC9D7D00C5886F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		9B7DDF0713DC803B00C5886F /* DeepLinkingAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				9B7DDF5A13DC9D7D00C5886F /* index.html */,
 				9B7DDF5513DC8BF100C5886F /* GOItemDetailViewController.h */,
 				9B7DDF5613DC8BF100C5886F /* GOItemDetailViewController.m */,
 				9B7DDF5713DC8BF100C5886F /* GOItemDetailViewController.xib */,
@@ -265,6 +268,7 @@
 				9B7DDF2313DC803B00C5886F /* FirstViewController.xib in Resources */,
 				9B7DDF2613DC803B00C5886F /* SecondViewController.xib in Resources */,
 				9B7DDF5913DC8BF100C5886F /* GOItemDetailViewController.xib in Resources */,
+				9B7DDF5B13DC9D7D00C5886F /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

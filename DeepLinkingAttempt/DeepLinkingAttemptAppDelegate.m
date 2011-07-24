@@ -19,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSURL *url = [[NSUserDefaults standardUserDefaults] URLForKey:@"launch-url"];
+    NSLog(@"URL: %@",url);
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
@@ -32,6 +35,10 @@
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:navigration1, navigration2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+    if(url){
+        [[UIApplication sharedApplication] openURL:url];
+    }
     return YES;
 }
 
@@ -39,14 +46,14 @@
     NSDictionary *params = [NSDictionary dictionaryFromQueryString:[url query]];
     if([[url host] isEqualToString:@"tab1"]){
         self.tabBarController.selectedIndex = 0;
+        if([params objectForKey:@"item"]){
+            GOItemDetailViewController *detailController = [[GOItemDetailViewController alloc] initWithItemID:[params objectForKey:@"item"]];
+            UINavigationController *navi = (UINavigationController*)[self.tabBarController selectedViewController];
+            [navi pushViewController:detailController animated:YES];
+        }
     }
     if([[url host] isEqualToString:@"tab2"]){
         self.tabBarController.selectedIndex = 1;
-    }
-    if([params objectForKey:@"item"]){
-        GOItemDetailViewController *detailController = [[GOItemDetailViewController alloc] initWithItemID:[params objectForKey:@"item"]];
-        UINavigationController *navi = (UINavigationController*)[self.tabBarController selectedViewController];
-        [navi pushViewController:detailController animated:NO];
     }
     return YES;
 }
