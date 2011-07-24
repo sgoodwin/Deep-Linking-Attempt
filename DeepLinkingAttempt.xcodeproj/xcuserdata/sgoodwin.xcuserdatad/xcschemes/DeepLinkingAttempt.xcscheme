@@ -4,6 +4,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B7DDEFC13DC803B00C5886F"
+               BuildableName = "DeepLinkingAttempt.app"
+               BlueprintName = "DeepLinkingAttempt"
+               ReferencedContainer = "container:DeepLinkingAttempt.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
@@ -11,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B7DDF2B13DC803B00C5886F"
+               BuildableName = "DeepLinkingAttemptTests.octest"
+               BlueprintName = "DeepLinkingAttemptTests"
+               ReferencedContainer = "container:DeepLinkingAttempt.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -21,6 +47,15 @@
       buildConfiguration = "Debug"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B7DDEFC13DC803B00C5886F"
+            BuildableName = "DeepLinkingAttempt.app"
+            BlueprintName = "DeepLinkingAttempt"
+            ReferencedContainer = "container:DeepLinkingAttempt.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -30,6 +65,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B7DDEFC13DC803B00C5886F"
+            BuildableName = "DeepLinkingAttempt.app"
+            BlueprintName = "DeepLinkingAttempt"
+            ReferencedContainer = "container:DeepLinkingAttempt.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

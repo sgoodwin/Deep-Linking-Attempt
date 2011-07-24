@@ -7,10 +7,10 @@
 //
 
 #import "DeepLinkingAttemptAppDelegate.h"
-
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
+#import "GOItemDetailViewController.h"
+#import "NSDictionary+QueryHandling.h"
 
 @implementation DeepLinkingAttemptAppDelegate
 
@@ -21,12 +21,33 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    UINavigationController *navigration1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController *navigration2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navigration1, navigration2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    NSDictionary *params = [NSDictionary dictionaryFromQueryString:[url query]];
+    if([[url host] isEqualToString:@"tab1"]){
+        self.tabBarController.selectedIndex = 0;
+    }
+    if([[url host] isEqualToString:@"tab2"]){
+        self.tabBarController.selectedIndex = 1;
+    }
+    if([params objectForKey:@"item"]){
+        GOItemDetailViewController *detailController = [[GOItemDetailViewController alloc] initWithItemID:[params objectForKey:@"item"]];
+        UINavigationController *navi = (UINavigationController*)[self.tabBarController selectedViewController];
+        [navi pushViewController:detailController animated:NO];
+    }
     return YES;
 }
 
