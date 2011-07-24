@@ -486,6 +486,7 @@
 				9B7DDF4113DC803B00C5886F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B7DDF4213DC803B00C5886F /* Build configuration list for PBXNativeTarget "DeepLinkingAttemptTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				9B7DDF4413DC803B00C5886F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
