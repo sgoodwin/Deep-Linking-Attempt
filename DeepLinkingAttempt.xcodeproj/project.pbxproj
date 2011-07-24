@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B7DDF0213DC803B00C5886F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0113DC803B00C5886F /* UIKit.framework */; };
+		9B7DDF0413DC803B00C5886F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0313DC803B00C5886F /* Foundation.framework */; };
+		9B7DDF0613DC803B00C5886F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0513DC803B00C5886F /* CoreGraphics.framework */; };
+		9B7DDF0C13DC803B00C5886F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF0A13DC803B00C5886F /* InfoPlist.strings */; };
+		9B7DDF0E13DC803B00C5886F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF0D13DC803B00C5886F /* main.m */; };
+		9B7DDF1213DC803B00C5886F /* DeepLinkingAttemptAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1113DC803B00C5886F /* DeepLinkingAttemptAppDelegate.m */; };
+		9B7DDF1513DC803B00C5886F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1413DC803B00C5886F /* FirstViewController.m */; };
+		9B7DDF1713DC803B00C5886F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1613DC803B00C5886F /* first.png */; };
+		9B7DDF1913DC803B00C5886F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1813DC803B00C5886F /* first@2x.png */; };
+		9B7DDF1C13DC803B00C5886F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1B13DC803B00C5886F /* SecondViewController.m */; };
+		9B7DDF1E13DC803B00C5886F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1D13DC803B00C5886F /* second.png */; };
+		9B7DDF2013DC803B00C5886F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF1F13DC803B00C5886F /* second@2x.png */; };
+		9B7DDF2313DC803B00C5886F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF2113DC803B00C5886F /* FirstViewController.xib */; };
+		9B7DDF2613DC803B00C5886F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF2413DC803B00C5886F /* SecondViewController.xib */; };
+		9B7DDF2E13DC803B00C5886F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF2D13DC803B00C5886F /* SenTestingKit.framework */; };
+		9B7DDF2F13DC803B00C5886F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0113DC803B00C5886F /* UIKit.framework */; };
+		9B7DDF3013DC803B00C5886F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0313DC803B00C5886F /* Foundation.framework */; };
+		9B7DDF3113DC803B00C5886F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7DDF0513DC803B00C5886F /* CoreGraphics.framework */; };
+		9B7DDF3913DC803B00C5886F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DDF3713DC803B00C5886F /* InfoPlist.strings */; };
+		9B7DDF3C13DC803B00C5886F /* DeepLinkingAttemptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DDF3B13DC803B00C5886F /* DeepLinkingAttemptTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B7DDF3213DC803B00C5886F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B7DDEF413DC803B00C5886F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B7DDEFC13DC803B00C5886F;
+			remoteInfo = DeepLinkingAttempt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B7DDEFD13DC803B00C5886F /* DeepLinkingAttempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinkingAttempt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7DDF0113DC803B00C5886F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9B7DDF0313DC803B00C5886F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B7DDF0513DC803B00C5886F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B7DDF0913DC803B00C5886F /* DeepLinkingAttempt-Info.plist */ = {isa = PBXFileReference; path = "DeepLinkingAttempt-Info.plist"; sourceTree = "<group>"; };
+		9B7DDF0B13DC803B00C5886F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B7DDF0D13DC803B00C5886F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B7DDF0F13DC803B00C5886F /* DeepLinkingAttempt-Prefix.pch */ = {isa = PBXFileReference; path = "DeepLinkingAttempt-Prefix.pch"; sourceTree = "<group>"; };
+		9B7DDF1013DC803B00C5886F /* DeepLinkingAttemptAppDelegate.h */ = {isa = PBXFileReference; path = DeepLinkingAttemptAppDelegate.h; sourceTree = "<group>"; };
+		9B7DDF1113DC803B00C5886F /* DeepLinkingAttemptAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeepLinkingAttemptAppDelegate.m; sourceTree = "<group>"; };
+		9B7DDF1313DC803B00C5886F /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		9B7DDF1413DC803B00C5886F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9B7DDF1613DC803B00C5886F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		9B7DDF1813DC803B00C5886F /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		9B7DDF1A13DC803B00C5886F /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		9B7DDF1B13DC803B00C5886F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9B7DDF1D13DC803B00C5886F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		9B7DDF1F13DC803B00C5886F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		9B7DDF2213DC803B00C5886F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		9B7DDF2513DC803B00C5886F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		9B7DDF2C13DC803B00C5886F /* DeepLinkingAttemptTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkingAttemptTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7DDF2D13DC803B00C5886F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9B7DDF3613DC803B00C5886F /* DeepLinkingAttemptTests-Info.plist */ = {isa = PBXFileReference; path = "DeepLinkingAttemptTests-Info.plist"; sourceTree = "<group>"; };
+		9B7DDF3813DC803B00C5886F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B7DDF3A13DC803B00C5886F /* DeepLinkingAttemptTests.h */ = {isa = PBXFileReference; path = DeepLinkingAttemptTests.h; sourceTree = "<group>"; };
+		9B7DDF3B13DC803B00C5886F /* DeepLinkingAttemptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeepLinkingAttemptTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B7DDEFA13DC803B00C5886F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF0213DC803B00C5886F /* UIKit.framework in Frameworks */,
+				9B7DDF0413DC803B00C5886F /* Foundation.framework in Frameworks */,
+				9B7DDF0613DC803B00C5886F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7DDF2813DC803B00C5886F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF2E13DC803B00C5886F /* SenTestingKit.framework in Frameworks */,
+				9B7DDF2F13DC803B00C5886F /* UIKit.framework in Frameworks */,
+				9B7DDF3013DC803B00C5886F /* Foundation.framework in Frameworks */,
+				9B7DDF3113DC803B00C5886F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B7DDEF213DC803B00C5886F = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF0713DC803B00C5886F /* DeepLinkingAttempt */,
+				9B7DDF3413DC803B00C5886F /* DeepLinkingAttemptTests */,
+				9B7DDF0013DC803B00C5886F /* Frameworks */,
+				9B7DDEFE13DC803B00C5886F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B7DDEFE13DC803B00C5886F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDEFD13DC803B00C5886F /* DeepLinkingAttempt.app */,
+				9B7DDF2C13DC803B00C5886F /* DeepLinkingAttemptTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B7DDF0013DC803B00C5886F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF0113DC803B00C5886F /* UIKit.framework */,
+				9B7DDF0313DC803B00C5886F /* Foundation.framework */,
+				9B7DDF0513DC803B00C5886F /* CoreGraphics.framework */,
+				9B7DDF2D13DC803B00C5886F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B7DDF0713DC803B00C5886F /* DeepLinkingAttempt */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF1013DC803B00C5886F /* DeepLinkingAttemptAppDelegate.h */,
+				9B7DDF1113DC803B00C5886F /* DeepLinkingAttemptAppDelegate.m */,
+				9B7DDF1313DC803B00C5886F /* FirstViewController.h */,
+				9B7DDF1413DC803B00C5886F /* FirstViewController.m */,
+				9B7DDF1613DC803B00C5886F /* first.png */,
+				9B7DDF1813DC803B00C5886F /* first@2x.png */,
+				9B7DDF1A13DC803B00C5886F /* SecondViewController.h */,
+				9B7DDF1B13DC803B00C5886F /* SecondViewController.m */,
+				9B7DDF1D13DC803B00C5886F /* second.png */,
+				9B7DDF1F13DC803B00C5886F /* second@2x.png */,
+				9B7DDF2113DC803B00C5886F /* FirstViewController.xib */,
+				9B7DDF2413DC803B00C5886F /* SecondViewController.xib */,
+				9B7DDF0813DC803B00C5886F /* Supporting Files */,
+			);
+			path = DeepLinkingAttempt;
+			sourceTree = "<group>";
+		};
+		9B7DDF0813DC803B00C5886F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF0913DC803B00C5886F /* DeepLinkingAttempt-Info.plist */,
+				9B7DDF0A13DC803B00C5886F /* InfoPlist.strings */,
+				9B7DDF0D13DC803B00C5886F /* main.m */,
+				9B7DDF0F13DC803B00C5886F /* DeepLinkingAttempt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B7DDF3413DC803B00C5886F /* DeepLinkingAttemptTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF3A13DC803B00C5886F /* DeepLinkingAttemptTests.h */,
+				9B7DDF3B13DC803B00C5886F /* DeepLinkingAttemptTests.m */,
+				9B7DDF3513DC803B00C5886F /* Supporting Files */,
+			);
+			path = DeepLinkingAttemptTests;
+			sourceTree = "<group>";
+		};
+		9B7DDF3513DC803B00C5886F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DDF3613DC803B00C5886F /* DeepLinkingAttemptTests-Info.plist */,
+				9B7DDF3713DC803B00C5886F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B7DDEFC13DC803B00C5886F /* DeepLinkingAttempt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B7DDF3F13DC803B00C5886F /* Build configuration list for PBXNativeTarget "DeepLinkingAttempt" */;
+			buildPhases = (
+				9B7DDEF913DC803B00C5886F /* Sources */,
+				9B7DDEFA13DC803B00C5886F /* Frameworks */,
+				9B7DDEFB13DC803B00C5886F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepLinkingAttempt;
+			productName = DeepLinkingAttempt;
+			productReference = 9B7DDEFD13DC803B00C5886F /* DeepLinkingAttempt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B7DDF2B13DC803B00C5886F /* DeepLinkingAttemptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B7DDF4213DC803B00C5886F /* Build configuration list for PBXNativeTarget "DeepLinkingAttemptTests" */;
+			buildPhases = (
+				9B7DDF2713DC803B00C5886F /* Sources */,
+				9B7DDF2813DC803B00C5886F /* Frameworks */,
+				9B7DDF2913DC803B00C5886F /* Resources */,
+				9B7DDF2A13DC803B00C5886F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B7DDF3313DC803B00C5886F /* PBXTargetDependency */,
+			);
+			name = DeepLinkingAttemptTests;
+			productName = DeepLinkingAttemptTests;
+			productReference = 9B7DDF2C13DC803B00C5886F /* DeepLinkingAttemptTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B7DDEF413DC803B00C5886F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "SNAP Interactive";
+			};
+			buildConfigurationList = 9B7DDEF713DC803B00C5886F /* Build configuration list for PBXProject "DeepLinkingAttempt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9B7DDEF213DC803B00C5886F;
+			productRefGroup = 9B7DDEFE13DC803B00C5886F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B7DDEFC13DC803B00C5886F /* DeepLinkingAttempt */,
+				9B7DDF2B13DC803B00C5886F /* DeepLinkingAttemptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B7DDEFB13DC803B00C5886F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF0C13DC803B00C5886F /* InfoPlist.strings in Resources */,
+				9B7DDF1713DC803B00C5886F /* first.png in Resources */,
+				9B7DDF1913DC803B00C5886F /* first@2x.png in Resources */,
+				9B7DDF1E13DC803B00C5886F /* second.png in Resources */,
+				9B7DDF2013DC803B00C5886F /* second@2x.png in Resources */,
+				9B7DDF2313DC803B00C5886F /* FirstViewController.xib in Resources */,
+				9B7DDF2613DC803B00C5886F /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7DDF2913DC803B00C5886F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF3913DC803B00C5886F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B7DDF2A13DC803B00C5886F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B7DDEF913DC803B00C5886F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF0E13DC803B00C5886F /* main.m in Sources */,
+				9B7DDF1213DC803B00C5886F /* DeepLinkingAttemptAppDelegate.m in Sources */,
+				9B7DDF1513DC803B00C5886F /* FirstViewController.m in Sources */,
+				9B7DDF1C13DC803B00C5886F /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7DDF2713DC803B00C5886F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7DDF3C13DC803B00C5886F /* DeepLinkingAttemptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B7DDF3313DC803B00C5886F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B7DDEFC13DC803B00C5886F /* DeepLinkingAttempt */;
+			targetProxy = 9B7DDF3213DC803B00C5886F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B7DDF0A13DC803B00C5886F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7DDF0B13DC803B00C5886F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9B7DDF2113DC803B00C5886F /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7DDF2213DC803B00C5886F /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		9B7DDF2413DC803B00C5886F /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7DDF2513DC803B00C5886F /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		9B7DDF3713DC803B00C5886F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7DDF3813DC803B00C5886F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B7DDF3D13DC803B00C5886F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B7DDF3E13DC803B00C5886F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B7DDF4013DC803B00C5886F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeepLinkingAttempt/DeepLinkingAttempt-Prefix.pch";
+				INFOPLIST_FILE = "DeepLinkingAttempt/DeepLinkingAttempt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9B7DDF4113DC803B00C5886F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeepLinkingAttempt/DeepLinkingAttempt-Prefix.pch";
+				INFOPLIST_FILE = "DeepLinkingAttempt/DeepLinkingAttempt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9B7DDF4313DC803B00C5886F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeepLinkingAttempt.app/DeepLinkingAttempt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeepLinkingAttempt/DeepLinkingAttempt-Prefix.pch";
+				INFOPLIST_FILE = "DeepLinkingAttemptTests/DeepLinkingAttemptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9B7DDF4413DC803B00C5886F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeepLinkingAttempt.app/DeepLinkingAttempt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeepLinkingAttempt/DeepLinkingAttempt-Prefix.pch";
+				INFOPLIST_FILE = "DeepLinkingAttemptTests/DeepLinkingAttemptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B7DDEF713DC803B00C5886F /* Build configuration list for PBXProject "DeepLinkingAttempt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7DDF3D13DC803B00C5886F /* Debug */,
+				9B7DDF3E13DC803B00C5886F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B7DDF3F13DC803B00C5886F /* Build configuration list for PBXNativeTarget "DeepLinkingAttempt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7DDF4013DC803B00C5886F /* Debug */,
+				9B7DDF4113DC803B00C5886F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9B7DDF4213DC803B00C5886F /* Build configuration list for PBXNativeTarget "DeepLinkingAttemptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7DDF4313DC803B00C5886F /* Debug */,
+				9B7DDF4413DC803B00C5886F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B7DDEF413DC803B00C5886F /* Project object */;
+}
